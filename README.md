@@ -1,3 +1,32 @@
+# Getting Started with this commads
+
+1. docker build . -t {image-name}
+2. docker image ls
+3. docker run reactimage
+4. docker ps (find container id)
+5. docker exec  -it {container-id} sh
+6. docker-compose up -d
+
+-----------------------------------------
+
+1. docker build . -t {image-name}
+    > docker build -t reactapp .
+
+2. docker image ls
+    > check image
+
+3. docker run -p 3001:3000 {image-name}
+    > docker run -p 3001:3000 reactapp
+    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp
+    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp sh
+
+4. docker ps (find container id)
+
+5. docker exec  -it {container-id} sh
+    > docker exec 7a7b5973d6d0 sh
+
+6. 6. docker-compose up -d`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,31 +97,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-1. docker build . -t {image-name}
-2. docker image ls
-3. docker run reactimage
-4. docker ps (find container id)
-5. docker exec  -it {container-id} sh
-6. docker-compose up -d
-
------------------------------------------
-
-1. docker build . -t {image-name}
-    > docker build -t reactapp .
-
-2. docker image ls
-    > check image
-
-3. docker run -p 3001:3000 {image-name}
-    > docker run -p 3001:3000 reactapp
-    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp
-    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp sh
-
-4. docker ps (find container id)
-
-5. docker exec  -it {container-id} sh
-    > docker exec 7a7b5973d6d0 sh
-
-6. 6. docker-compose up -d
