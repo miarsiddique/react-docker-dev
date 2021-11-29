@@ -70,15 +70,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-1. docker build . -t {reactimage (image-name)}
+1. docker build . -t {image-name}
 2. docker image ls
 3. docker run reactimage
 4. docker ps (find container id)
 5. docker exec  -it {container-id} sh
+6. docker-compose up -d
 
 -----------------------------------------
 
-1. docker build . -t {reactimage (image-name)}
+1. docker build . -t {image-name}
     > docker build -t reactapp .
 
 2. docker image ls
@@ -93,3 +94,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 5. docker exec  -it {container-id} sh
     > docker exec 7a7b5973d6d0 sh
+
+6. 6. docker-compose up -d
