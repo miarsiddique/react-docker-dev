@@ -77,5 +77,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 5. docker exec  -it {container-id} sh
 
 -----------------------------------------
-docker run -it --rm -v ${PWD}\reactdocker\:/app node:13.12.0-alpine sh
 
+1. docker build . -t {reactimage (image-name)}
+    > docker build -t reactapp .
+
+2. docker image ls
+    > check image
+
+3. docker run -p 3001:3000 {image-name}
+    > docker run -p 3001:3000 reactapp
+    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp
+    > docker run -it --rm -v ${PWD}:/app -p  3001:3000 -e CHOKIDAR_USEPOLLING=true reactapp sh
+
+4. docker ps (find container id)
+
+5. docker exec  -it {container-id} sh
+    > docker exec 7a7b5973d6d0 sh
