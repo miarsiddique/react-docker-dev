@@ -25,7 +25,7 @@
 5. docker exec  -it {container-id} sh
     > docker exec 7a7b5973d6d0 sh
 
-6. 6. docker-compose up -d`
+6. docker-compose up -d`
 
 # Getting Started with Create React App
 
