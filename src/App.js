@@ -1,12 +1,13 @@
 import './App.css';
+import Home from './containers/Homecontainer'
+import Headercontainer from './containers/Headercontainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          <h1>Learn PWA / Magento Update Update </h1>
-      </header>
-    </div>
+        <Headercontainer/>
+        <Home />
+      </div>
   );
 }
 
