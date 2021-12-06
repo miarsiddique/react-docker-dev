@@ -1,13 +1,10 @@
 import './App.css';
-import Home from './containers/Homecontainer'
-import Headercontainer from './containers/Headercontainer';
 
 function App() {
   return (
     <div className="App">
-        <Headercontainer/>
-        <Home />
-      </div>
+      <h2>Hello Word</h2>
+    </div>
   );
 }
 
